@@ -1,0 +1,1 @@
+The Dead Reckoning object solves the problem of handling object movements in multiplayer games where it isn't feasable to constantly send updates over the network. The Dead Reckoning object predicts the movement of the objects in-between updates from the server and makes their movement look more natural and realistic.

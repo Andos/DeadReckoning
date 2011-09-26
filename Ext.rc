@@ -1,0 +1,446 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "..\..\Inc\ccx.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x0L
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x10001L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Clickteam\0"
+            VALUE "FileDescription", "Dead Reckoning\0"
+            VALUE "FileVersion", "2.00\0"
+            VALUE "InternalName", "DeadReckoning\0"
+            VALUE "LegalCopyright", "Copyright © 2010 Anders Riggelsen\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DeadReckoning.mfx\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "00000002\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+KPX_MAGICNUMBER RCDATA MOVEABLE PURE 
+BEGIN
+    0x2516, 0x5908
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_ICON$(EDITOR)       BITMAP  MOVEABLE PURE   "RES\\EXTICON.BMP"
+#else
+EXO_ICON                BITMAP  MOVEABLE PURE   "RES\\EXTICON.BMP"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+EXO_IMAGE$(EDITOR)      BITMAP  MOVEABLE PURE   "RES\\EXTIMG.BMP"
+#else
+EXO_IMAGE               BITMAP  MOVEABLE PURE   "RES\\EXTIMG.BMP"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_CONDITIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_CONDITIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Is object inside obstacle?",  IDMN_OBJISINOBSTACLE
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_ACTIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_ACTIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Add object",                  IDMN_ADDOBJECT
+        MENUITEM "Remove object",               IDMN_REMOVEOBJECT
+        MENUITEM SEPARATOR
+        MENUITEM "Update position",             IDMN_UPDATEPOSITION
+        MENUITEM "Update X",                    IDMN_UPDATEX
+        MENUITEM "Update Y",                    IDMN_UPDATEY
+        MENUITEM "Update direction",            IDMN_UPDATEDIR
+        MENUITEM "Update angle",                IDMN_UPDATEANGLE
+        MENUITEM SEPARATOR
+        POPUP "Push out"
+        BEGIN
+            MENUITEM "Push object out of obstacle via callback", 
+                                                    IDMN_PUSHOBJOUTOFOBSTACLE
+
+            MENUITEM "Object is inside obstacle (on callback)", 
+                                                    IDMN_OBJECTISINSIDEOBSTACLE
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "Movement hints"
+        BEGIN
+            MENUITEM "Object was stopped",          IDMN_OBJWASSTOPPED
+            MENUITEM "Object bounced",              IDMN_OBJBOUNCED
+            MENUITEM SEPARATOR
+            MENUITEM "Set X position",              IDMN_SETX
+            MENUITEM "Set Y position",              IDMN_SETY
+            MENUITEM "Set direction",               IDMN_SETDIR
+            MENUITEM "Set angle",                   IDMN_SETANGLE
+            MENUITEM SEPARATOR
+            MENUITEM "Set X speed",                 IDMN_SETXSPEED
+            MENUITEM "Set Y speed",                 IDMN_SETYSPEED
+            MENUITEM "Set direction speed",         IDMN_SETDIRSPEED
+            MENUITEM "Set angle speed",             IDMN_SETANGLESPEED
+        END
+        POPUP "Object options"
+        BEGIN
+            POPUP "All variables"
+            BEGIN
+                MENUITEM "Set extrapolation mode",      IDMN_SETOBJEXTRAPOLATIONMODE
+
+                MENUITEM "Use acceleration?",           IDMN_SETOBJACCELERATIONMODE
+
+                MENUITEM "Set smoothing",               IDMN_SETOBJSMOOTHING
+
+            END
+            MENUITEM SEPARATOR
+            POPUP "X movement"
+            BEGIN
+                MENUITEM "Set extrapolation mode",      IDMN_SETOBJXEXTRAPOLATIONMODE
+
+                MENUITEM "Use acceleration?",           IDMN_SETOBJXACCELERATIONMODE
+
+                MENUITEM "Set smoothing",               IDMN_SETOBJXSMOOTHING
+
+            END
+            POPUP "Y movement"
+            BEGIN
+                MENUITEM "Set extrapolation mode",      IDMN_SETOBJYEXTRAPOLATIONMODE
+
+                MENUITEM "Use acceleration?",           IDMN_SETOBJYACCELERATIONMODE
+
+                MENUITEM "Set smoothing",               IDMN_SETOBJYSMOOTHING
+
+            END
+            POPUP "Direction changing"
+            BEGIN
+                MENUITEM "Set extrapolation mode",      IDMN_SETOBJDIREXTRAPOLATIONMODE
+
+                MENUITEM "Use acceleration?",           IDMN_SETOBJDIRACCELERATIONMODE
+
+                MENUITEM "Set smoothing",               IDMN_SETOBJDIRSMOOTHING
+
+            END
+            POPUP "Angle changing"
+            BEGIN
+                MENUITEM "Set extrapolation mode",      IDMN_SETOBJANGLEEXTRAPOLATIONMODE
+
+                MENUITEM "Use acceleration?",           IDMN_SETOBJANGLEACCELERATIONMODE
+
+                MENUITEM "Set smoothing",               IDMN_SETOBJANGLESMOOTHING
+
+            END
+        END
+        MENUITEM SEPARATOR
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(EDITOR)
+#if defined(APSTUDIO_INVOKED)
+MN_EXPRESSIONS$(EDITOR) MENU DISCARDABLE 
+#else
+MN_EXPRESSIONS MENU DISCARDABLE 
+#endif
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Number of controlled objects", IDMN_NUMOBJECTS
+        MENUITEM SEPARATOR
+        MENUITEM "Predicted X of object",       IDMN_PREDICTEDX
+        MENUITEM "Predicted Y of object",       IDMN_PREDICTEDY
+        MENUITEM "Predicted direction of object", IDMN_PREDICTEDDIR
+        MENUITEM "Predicted angle of object",   IDMN_PREDICTEDANGLE
+        MENUITEM SEPARATOR
+        MENUITEM "Current moved speed of object", IDMN_MOVESPEED
+        MENUITEM "Current moved direction of object", IDMN_MOVEDDIRECTION
+        MENUITEM "Current moved angle of object", IDMN_MOVEDANGLE
+        MENUITEM SEPARATOR
+        MENUITEM "X speed of object",           IDMN_XSPEED
+        MENUITEM "Y speed of object",           IDMN_YSPEED
+        MENUITEM "Direction speed of object",   IDMN_DIRSPEED
+        MENUITEM "Angle speed of object",       IDMN_ANGLESPEED
+        MENUITEM SEPARATOR
+        MENUITEM "X smoothing of object",       IDMN_XSMOOTHING
+        MENUITEM "Y smoothing of object",       IDMN_YSMOOTHING
+        MENUITEM "Direction smoothing of object", IDMN_DIRSMOOTHING
+        MENUITEM "Angle speed of object",       IDMN_ANGLESMOOTHING
+        MENUITEM SEPARATOR
+    END
+END
+#endif
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""..\\..\\Inc\\ccx.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    KPX_MARK                "MF2"
+    KPX_NAME                "Dead Reckoning"
+    IDS_CUBIC               "Cubic"
+    IDS_LINEAR              "Linear"
+    IDS_EXTRAPOLATION       "Extrapolation"
+    IDS_EXTRAPOLATION_DESC  "The default extrapolation method in-between updates."
+    IDS_USEACCELERATION     "Use acceleration"
+    IDS_USEACCELERATION_DESC 
+                            "Wheter or not the object should use acceleration calculations when predicting the next position (default setting)"
+    IDS_XSMOOTHING          "X Smoothing"
+    IDS_XSMOOTHING_DESC     "Default amount of smoothing on the X-axis"
+    IDS_YSMOOTHING          "Y Smoothing"
+    IDS_YSMOOTHING_DESC     "Default amount of smoothing on the Y-axis"
+    IDS_DIRSMOOTHING        "Direction smoothing"
+    IDS_DIRSMOOTHING_DESC   "Default amount of smoothing on the direction"
+    IDS_ANGLESMOOTHING      "Angle smoothing"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDST_OBJNAME            "Dead Reckoning"
+    IDST_AUTHOR             "Anders Riggelsen"
+    IDST_COPYRIGHT          "Copyright © 2010 Anders Riggelsen"
+    IDST_COMMENT            "Easily handles dead reckoning. Smooth out the movement of your networked objects in-between updates."
+    IDST_HTTP               "http://www.andersriggelsen.dk"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ANGLESMOOTHING_DESC "Default amount of smoothing on the angle"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ACT_ADDOBJECT       "Add object: %0"
+    IDS_ACT_REMOVEOBJECT    "Remove object: %0"
+    IDS_ACT_UPDATEPOSITION  "Update position of %0 to: %1, %2"
+    IDS_ACT_UPDATEX         "Update X of %0 to: %1"
+    IDS_ACT_UPDATEY         "Update Y of %0 to: %1"
+    IDS_ACT_UPDATEDIR       "Update direction of %0 to: %1"
+    IDS_ACT_UPDATEANGLE     "Update angle of %0 to: %1"
+    IDS_ACT_SETX            "Set X of %0 to: %1"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ACT_SETY            "Set Y of %0 to: %1"
+    IDS_ACT_SETDIR          "Set direction of %0 to: %1"
+    IDS_ACT_SETANGLE        "Set angle of %0 to: %1"
+    IDS_ACT_SETXSPEED       "Set X speed of %0 to: %1"
+    IDS_ACT_SETYSPEED       "Set Y speed of %0 to: %1"
+    IDS_ACT_SETDIRSPEED     "Set direction speed of %0 to: %1"
+    IDS_ACT_SETANGLESPEED   "Set angle speed of %0 to: %1"
+    IDS_ACT_OBJWASSTOPPED   "%0 was stopped"
+    IDS_ACT_OBJBOUNCED      "%0 bounced"
+    IDS_ACT_SETOBJEXTRAPOLATIONMODE "Set extrapolation mode of %0 to: %1"
+    IDS_ACT_SETOBJACCELERATIONMODE "Set acceleration mode of %0 to: %1"
+    IDS_ACT_SETOBJSMOOTHING "Set movement smoothing of %0 to: %1"
+    IDS_ACT_SETOBJXEXTRAPOLATIONMODE 
+                            "Set X movement extrapolation mode of %0 to: %1"
+    IDS_ACT_SETOBJXACCELERATIONMODE 
+                            "Set X movement acceleration mode of %0 to: %1"
+    IDS_ACT_SETOBJXSMOOTHING "Set X movement smoothing of %0 to: %1"
+    IDS_ACT_SETOBJYEXTRAPOLATIONMODE 
+                            "Set Y movement extrapolation mode of %0 to: %1"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ACT_SETOBJYACCELERATIONMODE 
+                            "Set Y movement acceleration mode of %0 to: %1"
+    IDS_ACT_SETOBJYSMOOTHING "Set Y movement smoothing of %0 to: %1"
+    IDS_ACT_SETOBJDIREXTRAPOLATIONMODE 
+                            "Set direction movement extrapolation mode of %0 to: %1"
+    IDS_ACT_SETOBJDIRACCELERATIONMODE 
+                            "Set direction movement acceleration mode of %0 to: %1"
+    IDS_ACT_SETOBJDIRSMOOTHING "Set direction movement smoothing of %0 to: %1"
+    IDS_ACT_SETOBJANGLEEXTRAPOLATIONMODE 
+                            "Set angle movement extrapolation mode of %0 to: %1"
+    IDS_ACT_SETOBJANGLEACCELERATIONMODE 
+                            "Set angle movement acceleration mode of %0 to: %1"
+    IDS_ACT_SETOBJANGLESMOOTHING "Set angle movement smoothing of %0 to: %1"
+    IDS_ACT_PUSHOBJOUTOFOBSTACLE "Push %0 out of obstacle"
+    IDS_ACT_OBJECTISINSIDEOBSTACLE "Object is inside obstacle"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CND_OBJISINOBSTACLE "%o: Is %0 inside an obstacle?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EXP_NUMOBJECTS      "NumObjects("
+    IDS_EXP_PREDICTEDX      "PredictedX("
+    IDS_EXP_PREDICTEDY      "PredictedY("
+    IDS_EXP_PREDICTEDDIR    "PredictedDirection("
+    IDS_EXP_PREDICTEDANGLE  "PredictedAngle("
+    IDS_EXP_XSPEED          "XSpeed("
+    IDS_EXP_YSPEED          "YSpeed("
+    IDS_EXP_DIRSPEED        "DirSpeed("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EXP_ANGLESPEED      "AngleSpeed("
+    IDS_EXP_XSMOOTHING      "XSmoothing("
+    IDS_EXP_YSMOOTHING      "YSmoothing("
+    IDS_EXP_DIRSMOOTHING    "DirSmoothing("
+    IDS_EXP_ANGLESMOOTHING  "AngleSmoothing("
+    IDS_EXP_MOVESPEED       "MovedSpeed("
+    IDS_EXP_MOVEDDIRECTION  "MovedDirection("
+    IDS_EXP_MOVEDANGLE      "MovedAngle("
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SELECTOBJECT        "Select an object"
+    IDS_OBJECTTOADD         "Object to add"
+    IDS_OBJECTTOREMOVE      "Object to remove"
+    IDS_OBJECTTOUPDATE      "Object to update"
+    IDS_XCOORD              "X-coordinate"
+    IDS_YCOORD              "Y-coordinate"
+    IDS_DIR                 "Direction"
+    IDS_ANGLE               "Angle"
+    IDS_XSPEED              "X speed"
+    IDS_YSPEED              "Y speed"
+    IDS_DIRSPEED            "Direction speed"
+    IDS_ANGLESPEED          "Angle speed"
+    IDS_OBJWASSTOPPED       "Object that was stopped"
+    IDS_OBJBOUNCED          "Object that bounced"
+    IDS_EXTRAPOLATIONPARAM  "0 = Linear, 1 = Cubic"
+    IDS_USEACCELERATIONPARAM "0 = Off, 1 = On"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SMOOTHING           "Smoothing amount.  0 = Off,  5.0 = heavy smoothing (but will lag behind)"
+    IDS_FIXEDVALUE          "Fixed value of the object"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
