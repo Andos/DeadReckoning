@@ -311,6 +311,9 @@ package Extensions
 
         private function act0_Addobject0(obj:CObject):void
         {
+			if(obj == null)
+				return;
+		
 			for ( var index:* in objects )
 			{
 				if(index == obj)
@@ -360,6 +363,8 @@ package Extensions
         
         private function act1_Removeobject0(obj:CObject):void
         {
+			if(obj == null)
+				return;
 			for ( var key:Object in objects )
 			{
 				if(key == obj)
@@ -372,86 +377,113 @@ package Extensions
 
         private function act2_Updatepositionof0to12(obj:CObject, x:Number, y:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
-
 			drobj.xPosition.UpdateValue(x, time);
 			drobj.yPosition.UpdateValue(y, time);
         }
 
         private function act3_UpdateXof0to1(obj:CObject, x:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.UpdateValue(x, time);
         }
 
         private function act4_UpdateYof0to1(obj:CObject, y:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.yPosition.UpdateValue(y, time);
         }
 
         private function act5_Updatedirectionof0to1(obj:CObject, dir:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.direction.UpdateValue(dir, time);
         }
 
         private function act6_Updateangleof0to1(obj:CObject, angle:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.angle.UpdateValue(angle, time);
         }
 
         private function act7_SetXof0to1(obj:CObject, x:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.SetValue(x);
         }
 
         private function act8_SetYof0to1(obj:CObject, y:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.SetValue(y);
         }
 
         private function act9_Setdirectionof0to1(obj:CObject, dir:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.angle.SetValue(dir);
         }
 
         private function act10_Setangleof0to1(obj:CObject, angle:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.angle.SetValue(angle);
         }
 
         private function act11_SetXspeedof0to1(obj:CObject, xspeed:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.SetValue(xspeed);
         }
 
         private function act12_SetYspeedof0to1(obj:CObject, yspeed:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.yPosition.SetValue(yspeed);
         }
 
         private function act13_Setdirectionspeedof0to1(obj:CObject, dirspeed:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.direction.SetValue(dirspeed);
         }
 
         private function act14_Setanglespeedof0to1(obj:CObject, anglespeed:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.angle.SetValue(anglespeed);
         }
 
         private function act15_0wasstopped(obj:CObject):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.SetValue(obj.hoX);
 			drobj.yPosition.SetValue(obj.hoY);
@@ -459,6 +491,8 @@ package Extensions
 
         private function act16_0bounced(obj:CObject):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.SetValue(obj.hoX);
 			drobj.yPosition.SetValue(obj.hoY);
@@ -468,6 +502,8 @@ package Extensions
 		//All
         private function act17_Setextrapolationmodeof0to1(obj:CObject, mode:int):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.extrapolationMode = mode;
 			drobj.yPosition.extrapolationMode = mode;
@@ -477,6 +513,8 @@ package Extensions
 
         private function act18_Setaccelerationmodeof0to1(obj:CObject, mode:int):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.useAcceleration = mode;
 			drobj.yPosition.useAcceleration = mode;
@@ -486,6 +524,8 @@ package Extensions
 
         private function act19_Setmovementsmoothingof0to1(obj:CObject, smoothing:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.smoothing = smoothing;
 			drobj.yPosition.smoothing = smoothing;
@@ -496,18 +536,24 @@ package Extensions
 		//X
         private function act20_SetXmovementextrapolationmodeof0to1(obj:CObject, mode:int):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.extrapolationMode = mode;
         }
 
         private function act21_SetXmovementaccelerationmodeof0to1(obj:CObject, mode:int):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.useAcceleration = mode;
         }
 
         private function act22_SetXmovementsmoothingof0to1(obj:CObject, smoothing:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.xPosition.smoothing = smoothing;
         }
@@ -515,18 +561,24 @@ package Extensions
 		//Y
         private function act23_SetYmovementextrapolationmodeof0to1(obj:CObject, mode:int):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.yPosition.extrapolationMode = mode;
         }
 
         private function act24_SetYmovementaccelerationmodeof0to1(obj:CObject, mode:int):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.yPosition.useAcceleration = mode;
         }
 
         private function act25_SetYmovementsmoothingof0to1(obj:CObject, smoothing:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.yPosition.smoothing = smoothing;
         }
@@ -534,18 +586,24 @@ package Extensions
 		//Dir
         private function act26_Setdirectionextrapolationmodeof0to1(obj:CObject, mode:int):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.direction.extrapolationMode = mode;
         }
 
         private function act27_Setdirectionaccelerationmodeof0to1(obj:CObject, mode:int):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.direction.useAcceleration = mode;
         }
 
         private function act28_Setdirectionsmoothingof0to1(obj:CObject, smoothing:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.direction.smoothing = smoothing;
         }
@@ -553,18 +611,24 @@ package Extensions
 		//Angle
         private function act29_Setangleextrapolationmodeof0to1(obj:CObject, mode:int):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.angle.extrapolationMode = mode;
         }
 
         private function act30_Setangleaccelerationmodeof0to1(obj:CObject, mode:int):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.angle.useAcceleration = mode;
         }
 
         private function act31_Setanglesmoothingof0to1(obj:CObject, smoothing:Number):void
         {
+			if(obj == null)
+				return;
 			var drobj:CRunDeadReckoningObject = objects[obj];
 			drobj.angle.smoothing = smoothing;
         }
